@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "556302689261",
+    "project_id": "aazorlive",
+    "storage_bucket": "aazorlive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556302689261:android:8ace8f65a49883220c7de4",
+        "android_client_info": {
+          "package_name": "com.example.aazorlive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556302689261-uek1m59oane7dnq2g8m20ak9289a0dec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aazorlive",
+            "certificate_hash": "a25372a3169f6e36de75e99d0b44b91620c7b643"
+          }
+        },
+        {
+          "client_id": "556302689261-3k0vqd5p9hh7gl3rn80k0cjqpdton3t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQuc_JvPQcKUNsYn2yfoPRJeFhgTO4lB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556302689261-3k0vqd5p9hh7gl3rn80k0cjqpdton3t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context=".livecommu">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/black2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backbtn"
+                android:src="@drawable/ic_round_arrow_back_ios_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Community"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:cardElevation="6dp"
+        android:id="@+id/search1"
+        android:layout_below="@+id/toolbar"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="12dp"
+        app:cardBackgroundColor="@color/black2"
+        android:outlineAmbientShadowColor="#333333"
+        android:outlineSpotShadowColor="#333333"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="6dp">
+            <ImageView
+                android:id="@+id/attachment"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/ic_round_search_24"
+                app:tint="#808080" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textColor="#333333"
+                android:id="@+id/search"
+                android:fontFamily="@font/montserrat"
+                android:textSize="18dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/toolbar"/>
+        </LinearLayout></androidx.cardview.widget.CardView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnOrderPreserved="false"
+        android:alignmentMode="alignMargins"
+        android:id="@+id/first"
+        android:layout_below="@+id/search1"
+        android:columnCount="2">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:id="@+id/cardview1"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="#c1deba"
+            android:outlineAmbientShadowColor="#333333"
+            android:outlineSpotShadowColor="#333333"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anime"
+                android:textSize="18dp"
+                android:id="@+id/topic"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_gravity="center"
+                android:textColor="@color/black2"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            android:id="@+id/cardview2"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="@color/black2"
+            android:outlineAmbientShadowColor="#333333"
+            android:outlineSpotShadowColor="#333333"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Books"
+                android:textSize="18dp"
+                android:id="@+id/topic1"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+
+
+</RelativeLayout>

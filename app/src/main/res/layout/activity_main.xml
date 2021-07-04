@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".Activities.MainActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="13dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/relative">
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:id="@+id/status1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/ic_round_add_box_24"/>
+
+    <TextView
+        android:id="@+id/aazorlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="AazoR"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:includeFontPadding="true"
+        android:layout_marginTop="-4dp"
+        android:textSize="22sp" />
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="57dp"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/white"
+        android:id="@+id/search"
+        android:background="@drawable/ic_round_search_24"/>
+<ImageView
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:src="@drawable/ic_baseline_person_24"
+    android:background="@drawable/circle_bg"
+    android:id="@+id/imageProfileview"
+    android:padding="3dp"
+    android:layout_marginEnd="17dp" />
+
+</RelativeLayout>
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/statusList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        app:shimmer_demo_angle="20"
+        android:layout_below="@+id/relative"
+        app:shimmer_demo_child_count="10"
+        app:shimmer_demo_shimmer_color="@color/white"
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout="@layout/demo_status"
+        app:shimmer_demo_layout_manager_type="linear_horizontal" />
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view3"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="10"
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout="@layout/demo_layout"
+        app:shimmer_demo_layout_manager_type="linear_vertical"
+        tools:listitem="@layout/row_conversation" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_margin="8dp"
+        android:background="#333333"
+        android:layout_below="@+id/statusList"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        app:menu_fab_size="normal"
+        app:fab_colorNormal="#CF6679"
+        app:fab_colorPressed="#CF6679"
+        app:fab_colorRipple="#CF6679"
+        app:menu_colorNormal="#CF6679"
+        app:menu_colorPressed="#CF6679"
+        app:menu_colorRipple="#CF6679"
+        app:menu_icon="@drawable/ic_round_edit_24"
+        app:menu_showShadow="true"
+        app:menu_shadowColor="#66000000"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="3dp"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/livecomm"
+            app:menu_labels_style="@font/montserrat_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_chat_24"
+            app:fab_size="mini"
+            app:fab_colorNormal="#CF6679"
+            android:fontFamily="@font/montserrat"
+            app:fab_label="Live Community" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/invite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_share_24"
+            app:fab_size="mini"
+            app:fab_colorNormal="#CF6679"
+            android:fontFamily="@font/montserrat"
+            app:fab_label="Invite" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/Setting1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_round_settings_24"
+            app:fab_size="mini"
+            app:fab_colorNormal="#CF6679"
+            android:paddingLeft="2dp"
+            app:fab_label="Settings" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>
